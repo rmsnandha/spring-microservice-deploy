@@ -1,7 +1,8 @@
-package com.example.service1.service;
+package com.example.service;
 
-import com.example.service1.entity.Library;
-import com.example.service1.repository.LibraryRepository;
+
+import com.example.entity.Library;
+import com.example.repository.LibraryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;

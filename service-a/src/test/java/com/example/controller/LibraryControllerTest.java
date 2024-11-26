@@ -1,7 +1,8 @@
-package com.example.service1.controller;
+package com.example.controller;
 
-import com.example.service1.entity.Library;
-import com.example.service1.service.LibraryService;
+
+import com.example.entity.Library;
+import com.example.service.LibraryService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

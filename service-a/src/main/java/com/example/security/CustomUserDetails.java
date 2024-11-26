@@ -1,6 +1,7 @@
-package com.example.service1.security;
+package com.example.security;
 
-import com.example.service1.entity.Employee;
+
+import com.example.entity.Employee;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

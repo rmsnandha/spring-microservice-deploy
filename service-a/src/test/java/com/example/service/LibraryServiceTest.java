@@ -1,7 +1,8 @@
-package com.example.service1.service;
+package com.example.service;
 
-import com.example.service1.entity.Library;
-import com.example.service1.repository.LibraryRepository;
+
+import com.example.entity.Library;
+import com.example.repository.LibraryRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,7 +20,7 @@ public class LibraryServiceTest {
     private LibraryService libraryService; 
 
     @Mock
-    private LibraryRepository libraryRepository; 
+    private LibraryRepository libraryRepository;
 
     @BeforeEach
     public void setUp() {

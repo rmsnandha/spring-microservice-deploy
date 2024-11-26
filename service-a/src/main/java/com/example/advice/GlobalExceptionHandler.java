@@ -1,7 +1,8 @@
-package com.example.service1.advice;
+package com.example.advice;
 
-import com.example.service1.exception.EntityNotFoundException;
-import com.example.service1.exception.ResourceNotFoundException;
+
+import com.example.exception.EntityNotFoundException;
+import com.example.exception.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

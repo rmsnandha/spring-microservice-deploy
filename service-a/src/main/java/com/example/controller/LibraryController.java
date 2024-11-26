@@ -1,8 +1,9 @@
-package com.example.service1.controller;
+package com.example.controller;
 
-import com.example.service1.entity.Library;
-import com.example.service1.exception.ResourceNotFoundException;
-import com.example.service1.service.LibraryService;
+
+import com.example.entity.Library;
+import com.example.exception.ResourceNotFoundException;
+import com.example.service.LibraryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,6 +1,7 @@
-package com.example.service1.repository;
+package com.example.repository;
 
-import com.example.service1.entity.Author;
+
+import com.example.entity.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

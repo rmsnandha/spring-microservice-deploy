@@ -2,3 +2,4 @@
 /service-b/target/
 
 .idea
+/service-c-node-js/node_modules/

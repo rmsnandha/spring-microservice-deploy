@@ -1,6 +1,7 @@
-package com.example.service1.event;
+package com.example.event;
 
-import com.example.service1.entity.Employee;
+
+import com.example.entity.Employee;
 import org.springframework.context.ApplicationEvent;
 
 public class UserCreatedEvent extends ApplicationEvent {
