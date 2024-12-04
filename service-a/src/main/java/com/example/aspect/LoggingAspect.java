@@ -1,10 +1,11 @@
-package com.example.service1.aspect;
+package com.example.aspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -14,17 +15,17 @@ public class LoggingAspect {
     
 
 
-    @Before("execution(* com.example.service1.service.*.*(..))")
+    @Before("execution(* com.example.service.*.*(..))")
     public void logBeforeMethodExecution() {
         log.info("Method in service is about to be called");
     }
 
-    @After("execution(* com.example.service1.service.*.*(..))")
+    @After("execution(* com.example.service.*.*(..))")
     public void logAfterMethodExecution() {
         log.info("Method in service has been called");
     }
 
-    @Around("execution(* com.example.service1.service.*.*(..))")
+    @Around("execution(* com.example.service.*.*(..))")
     public Object logAroundMethodExecution(ProceedingJoinPoint joinPoint) throws Throwable {
         long startTime = System.currentTimeMillis();
         log.info("Method execution start: " + joinPoint.getSignature());
